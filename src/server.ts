@@ -1,7 +1,7 @@
 import express from "express";
 
 const app = express();
-const port = process.env.port || 5000;
+const port = process.env.PORT;
 
 app.use(express.json());
 
@@ -23,4 +23,6 @@ app.delete("/:id", (req, res) => {
   res.status(200).send({ id, ...req.body });
 });
 
-app.listen(port);
+app.listen(port, () => {
+  console.log(`http://localhost:${port}`);
+});
