@@ -4,7 +4,7 @@
   "description": "REST API for a Store. Made with Node and TypeScript",
   "main": "server.js",
   "scripts": {
-    "dev": "npx nodemon ./server.ts",
+    "dev": "npx nodemon ./src/server.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
